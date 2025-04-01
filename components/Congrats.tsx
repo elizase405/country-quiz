@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { usePointsContext } from '../context/PointsContext';
 
 function Congrats({ handleRestart }: { handleRestart: () => void }) {

@@ -3,6 +3,7 @@ import { createContext, useState, ReactNode, useContext } from 'react';
 interface PointsContextType {
   points: number;
   IncrementPoints: () => void;
+  ResetPoints: () => void;
 }
 
 const PointsContext = createContext<PointsContextType | undefined>(undefined);

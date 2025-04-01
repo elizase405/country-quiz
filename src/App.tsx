@@ -9,8 +9,8 @@ function App() {
   const [done, setDone] = useState(0);
   const [next, setNext] = useState(0);
   const [num, setNum] = useState<number | null>(null);
-  const [countries, setCountries] = useState([]);
-  const [possibleValues, setPossibleValues] = useState([]);
+  const [countries, setCountries] = useState<any[]>([]);
+  const [possibleValues, setPossibleValues] = useState<any[]>([]);
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
 
   const handleRestart = () => {

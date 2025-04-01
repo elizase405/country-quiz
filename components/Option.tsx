@@ -4,7 +4,7 @@ interface OptionProps {
   options: any[]
   answer: string
   selectedOption: string | null
-  handleClick: (string) => void
+  handleClick: (opt: string) => void
 }
 
 function Option({options, answer, selectedOption, handleClick}: OptionProps) {
