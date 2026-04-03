@@ -63,7 +63,7 @@ function Body({
   };
 
   useEffect(() => {
-    fetch('https://restcountries.com/v3.1/all')
+    fetch('https://restcountries.com/v3.1/all?fields=name,capital,currencies')
       .then(response => response.json())
       .then(data => {
         const shuffledCountries = shuffleArray(data);
